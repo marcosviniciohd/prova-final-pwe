@@ -24,6 +24,17 @@ header ul li a:hover{
     color: orangered;
     cursor: pointer;
 }
+summary{
+    text-align: left;
+    padding-left: 20px;
+    color: orangered;
+    font-weight: bold;
+    cursor: pointer;
+}
+details p{
+    text-align: justify;
+    margin: 20px;
+}
 .box-apresentacao{
     background-color: white;
     border: 4px solid orangered;
@@ -44,15 +55,46 @@ header ul li a:hover{
     width: 80%;
     padding: 15px 0;
 }
-.section-apresentacao{
-    background-color: rgb(3, 3, 58);
-    padding: 25px;
-}
 .logo1{
     display: none;
 }
 .logo2{
     display: inline;
+}
+.section-apresentacao{
+    background-color: rgb(3, 3, 58);
+    padding: 25px;
+}
+.section-produtos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+}
+.section-produtos p{
+    color: rgb(75, 72, 72);
+    line-height: 1.5em;
+    font-size:14px;
+    padding: 20px;
+    text-align: justify;
+
+}
+.section-detalhes{
+    padding: 40px;
+}
+.section-detalhes p{
+    text-align: justify;
+    margin-bottom: 40px;
+}
+.section-detalhes h2{
+    text-align: center;
+    padding: 20px 0px;
+}
+footer{
+    background-color:orangered;
+    text-align: center;
+    color: white;
+    padding: 30px;
 }
 /* Versão desktop */
 @media screen and (min-width: 1200px) {
@@ -75,4 +117,12 @@ header ul li a:hover{
     .box-apresentacao p{
         font-size: 20px;
     }
+    .section-produtos{
+        flex-direction: row;
+    }
+    .section-produtos div{
+        width: 25%;
+    }
+    .section-detalhes h2{
+        text-align: left;
 }
